@@ -1,0 +1,154 @@
+/*FONTS*/
+@font-face {
+	font-family: Permanent;
+	src: url(./fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+	font-family: BebasNeue;
+	src: url(./fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+	font-family:Lugrasimo;
+	src: url(./fonts/Lugrasimo-Regular.ttf);
+}
+@font-face {
+	font-family: JosefinSans;
+	src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: Exo2;
+	src: url(./fonts/Exo2-VariableFont_wght.ttf);
+}
+/*SETTINGS H1 H2 P*/
+h1
+{
+	color: rgb(0, 0, 0);
+}
+h2
+{
+	color: #000000;
+	font-family: Exo2;
+	font-size: 33px;
+}
+p
+{
+	font-size: 20px;
+}
+* {
+	margin: 0;
+	padding: 0
+}
+/* ESTRUCTURA */
+body {
+	background-color: #360000
+}
+header {
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #d80000;
+	padding: 2%;
+	height: 180px;
+}
+main {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+footer {
+	width: 96%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background-color: #fdff7a;
+	background-image: url(images/y-so-serious.png);
+	padding: 2%;
+}
+section {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	text-align: center;
+	padding: 3% 0;
+	display: flex;
+	flex-direction: column;
+}
+.middle-section {
+	background-color: #2f2f2f;
+	padding: 4% 0;
+}
+#intro {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 10px;
+	background-color: #fb8888;
+	background-image: url(images/fondo.jpg);
+	background-position: center;
+	color: #fff;
+	width: 96%;
+	padding: 5% 2%;
+	height: 340px;
+	font-family: JosefinSans;
+	font-size:x-large;
+}
+.container-01 {
+	background-color: #fff;
+	font-family: Permanent;
+	font-size: 25px;
+}
+.container-01, .container-02 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center
+	
+}
+.container-01 div {
+	width: 28%;
+	padding: 2%;
+}
+.container-02 div {
+	width: 32%;
+	padding: 2%;
+	font-family: Exo2;
+	font-size: 25px;
+	color: #fff;
+}
+.container-01 div img, .container-02 div img {
+	width: 100%;
+	margin-bottom: 12px;
+	height: 285px;
+}
+/* RESPONSIVE DESIGN - MOBILES */
+@media screen and (max-width:768px) {
+	.container-01 div, .container-02 div {
+		width: 40%;
+	}
+}
+/* RESPONSIVE DESIGN - MOBILES */
+@media screen and (max-width:425px) {
+	.container-01, .container-02 {
+		display: flex;
+		flex-direction: column;
+	}
+	.container-01 div, .container-02 div {
+		width: 96%;
+		margin: 4% 0;
+	}
+	section {
+		padding: 8% 0;
+	}
+	.middle-section {
+		padding: 8% 0;
+	}
+	header, footer {
+		padding: 4% 2%;
+	}
+}
